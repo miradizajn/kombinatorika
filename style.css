@@ -15,7 +15,9 @@ body{
     background-color: #272727;
     font-family: 'VT323', sans-serif;
     color: #fff;
+    background-image: url(images/001.png);
 }
+
 
 h1{
     letter-spacing: 2px;
