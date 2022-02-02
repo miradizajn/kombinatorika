@@ -25,8 +25,9 @@ $("#perm-select").on("change", function () {
 
 $("#ismnelkuli-form").on("submit", function (e) {
   e.preventDefault();
-  calcIsmNelkul();
+  calcIsmNelkuli();
 });
+
 
 $("#ismetleses-form").on("submit", function (e) {
   e.preventDefault();
@@ -50,11 +51,6 @@ function addinp() {
   $("#k-elem").append(inp);
 }
 
-function calcIsmNelkuli() {
-  var n = $("#n-count").val();
-  $("#out").text(`${n}! = ${factorial(n)}`);
-  $("#out-long").text(`${factorial(n)} féle képpen rendezhető sorba.`);
-}
 
 function calcIsm() {
   console.log("ism");
@@ -89,3 +85,9 @@ const factorial = (num) => {
   }
   return num;
 };
+
+function calcIsmNelkuli() {
+  var n = $("#n-count").val();
+  $("#out").text(`${n}! = ${factorial(n)}`);
+  $("#out-long").text(`${factorial(n)} féle képpen rendezhető sorba.`);
+}
